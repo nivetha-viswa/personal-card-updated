@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head><body>
+    <h1>My first web page</h1>
+    <h2>What this is</h2>
+    <p>Welcome to <i>my first webpage</i>. I created this webpage without the assistance of a webpage editor. Just my little text editor and a keen <b><span>understanding of html.</span></b></p>
+    <h2>Why this is</h2>
+    <ul>
+        <li>To learn HTML</li>
+        <li>List element</li>
+        <ol>
+            <li>Home</li>
+            <li>FAQ</li>
+            <li>Contact</li>
+            <li>About</li>
+        </ol>
+        <li>Here I have created ordered and unordered list</li>
+    </ul>
+    <h2>ZeusLearning.com</h2>
+    <a href="https://www.zeuslearning.com/" target="_blank">This link will open zeuslearning.com in new tab</a>
+    <h2>On click of following image navigate to Google.com</h2>
+    <a href="https://www.google.com/"><img src="https://cdn.geekwire.com/wp-content/uploads/2015/09/Screen-Shot-2015-09-01-at-9.18.10-AM.png" alt="Google logo" height="90px" width="150px"></a>
+    <h3>Some random table</h3>
+    <table border="1">
+        <tr>
+            <td>Row 1, cell 1</td>
+            <td>Row 1, cell 2</td>
+            <td>Row 1, cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 2, cell 1</td>
+            <td>Row 2, cell 2</td>
+            <td>Row 2, cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, cell 1</td>
+            <td>Row 3, cell 2</td>
+            <td>Row 3, cell 3</td>
+        </tr>
+        <tr>
+            <td>Row 4, cell 1</td>
+            <td>Row 4, cell 2</td>
+            <td>Row 4, cell 3</td>
+        </tr>
+    </table>
+    <h3>Some random form</h3>
+    <p><b><span>Note: </span></b>It looks the part, but won't do a anything</p>
+    <form>
+        <label>Name:</label><br><br>
+        <input type="text" placeholder="Your name" id="name"><br><br>
+        <label>Comments:</label><br><br>
+        <textarea rows="9" cols="22" style="overflow:scroll;" id="comments" placeholder="Your comments"></textarea><br><br>
+        <label>Are you:</label><br><br>
+        <input type="radio" name="radiobutton" id="male">Male<br><br>
+        <input type="radio" name="radiobutton" id="female">Female<br><br>
+        <button type="submit" onclick="validate()">Submit Query</button>
+    </form>
+</body>
+<script>
+    function validate()
+    {
+        var name = document.getElementById("name").value;
+        var comments = document.getElementById("comments").value;
+        var x=0;
+
+        if(document.getElementById("male").checked) 
+        {
+            x++;
+        } 
+        if(document.getElementById("female").checked)
+        {
+            x++; 
+        }
+        if (name.length == 0)
+        { 
+            document.getElementById("name").focus();  
+            alert("All fields are compulsory");
+        }
+        else if(comments.length == 0)
+        {
+            document.getElementById("comments").focus();  
+            alert("All fields are compulsory");
+        }  	  
+        else if(x == 0)
+        {
+            document.getElementById("male").focus();  
+            alert("All fields are compulsory");
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background: #FCF8BE;
+    font-family: Arial;
+}
+h1{
+    background: #960000;
+    letter-spacing: 12px;
+    color: #FCF8BE;
+    font-style: italic;
+    border-bottom: 10px solid #CD1506;
+    text-align: center;
+}
+h2{
+    background: #009600;
+    padding-left: 10px;
+    color: white;
+}
+ul{
+    color: #960000;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: 2px dotted #A7A5A5;
+}
+table{
+    background: #A7A5A5;
+}
+h3{
+    color: #A7A5A5;
+}
+span{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+
