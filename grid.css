@@ -1,0 +1,52 @@
+body,html{
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 1px solid black;   
+    color: white;
+}
+.cont-one, .cont-two, .cont-three{
+    background-image: linear-gradient(to bottom right, #6a53d9, #38d5dd);
+
+}
+.container{
+    height: 100%;
+    display: grid;
+    grid-gap: 3px; 
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 60px auto auto 80px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "s s o o o o o o o o o o"
+    "s s t t t t t y y y y y"  
+    "f f f f f f f f f f f f";    
+}
+.header{
+    grid-area: h;
+    background-image: linear-gradient(#7b64e0, #8069de);
+}
+.sidebar{
+    grid-area: s;
+    background-image: linear-gradient(#3bd7cf, #2cada6);
+}
+.cont-one{
+    grid-area: o;
+}
+.cont-two{
+    grid-area: t;
+}
+.cont-three{
+    grid-area: y;
+}
+.footer{
+    grid-area: f;
+    background-image: linear-gradient(#7b64e0, #8069de);
+}
